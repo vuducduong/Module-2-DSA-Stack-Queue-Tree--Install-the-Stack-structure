@@ -1,0 +1,30 @@
+<?php
+include_once "Stack.php";
+
+$number = new Stack(9);
+$number->push(1);
+$number->push(2);
+$number->push(3);
+$number->push(4);
+$number->push(5);
+print_r($number);
+echo "<br>";
+$number->pop();
+$number->pop();
+$number->pop();
+print_r($number);
+echo "<br>";
+$number->push(7);
+$number->push(7);
+print_r($number);
+echo "<br>";
+$number->checkEmpty();
+echo "<br>";
+$number->pop();
+$number->pop();
+$number->pop();
+$number->pop();
+print_r($number);
+echo "<br>";
+$number->checkEmpty();
+echo "<br>";
